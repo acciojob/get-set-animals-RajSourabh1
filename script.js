@@ -1,26 +1,54 @@
 //complete this code
+// class Animal {
+// 	constructor(species){
+// 		this._species=species;
+// 	}
+// 	get species(){
+// 	   return this.species;
+// 	}
+//     makeSound(){
+// 		console.log(`The ${this._species} makes a sound`);
+// 	}
+// }
+
+// class Dog extends Animal extends Animal{
+// 	bark(){
+// 		console.log("woof");
+// 	}
+// }
+
+// class Cat extends Animal {
+// 	purr(){
+// 		console.log("purr");
+// 	}
+// }
+
+// // Do not change the code below this line
+// window.Animal = Animal;
+// window.Dog = Dog;
+// window.Cat = Cat;
 class Animal {
-	constructor(species){
-		this._species=species;
-	}
-	get species(){
-	   return this.species;
-	}
-    makeSound(){
-		console.log(`The ${this._species} makes a sound`);
-	}
+constructor(someSpecies){
+this._species = someSpecies;
+}
+get species(){
+return this._species;
+}
+makeSound(){
+console.log(`The ${this._species} makes a sound`);
+}
 }
 
-class Dog extends Animal extends Animal{
-	bark(){
-		console.log("woof");
-	}
+class Dog extends Animal {
+bark(){
+console.log("woof");
+}
 }
 
 class Cat extends Animal {
-	purr(){
-		console.log("purr");
-	}
+purr(){
+console.log("purr");
+}
 }
 
 // Do not change the code below this line
